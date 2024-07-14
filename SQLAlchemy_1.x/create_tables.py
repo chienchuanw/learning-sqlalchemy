@@ -18,6 +18,8 @@ users_table = Table(
     Column("full_name", Text),
 )
 
+# Note: Consider "String" as CharsField and "Text" as TextField compared with Django
+
 
 comments_table = Table(
     "comments",

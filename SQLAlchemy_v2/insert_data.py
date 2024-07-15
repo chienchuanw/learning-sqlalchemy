@@ -1,9 +1,6 @@
 from .create_models import User, Comment
-from sqlalchemy.orm import Session
-from .connect_database import engine
+from .main import session
 
-# Create a new session
-session = Session(bind=engine)
 
 # Create instances of User and Comment
 user_one = User(

@@ -10,6 +10,7 @@ engine = create_engine("sqlite:///sample.db", echo=True)
 with engine.connect() as connect:
     # Execute a simple SQL statement that selects the string "Hello"
     # Note: The string passed to 'text' needs to be a valid SQL statement. Otherwise, it will errors
+    # result is a Result Object
     result = connect.execute(text("SELECT 'Hello'"))
 
     # Print all results of the query (in this case, it will be a single value: "Hello")
